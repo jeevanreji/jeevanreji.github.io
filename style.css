@@ -1,7 +1,7 @@
 /* General Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif; /* Georgia Tech uses clean, modern fonts */
+    background-color: #f9f9f9; /* Light background for readability */
     margin: 0;
     padding: 20px;
     line-height: 1.6;
@@ -9,41 +9,75 @@ body {
 
 /* Header Styling */
 header {
-    background-color: #0073e6;
-    color: white;
-    padding: 10px;
+    background-color: #003057; /* Georgia Tech Navy Blue */
+    color: #FFFFFF; /* White text for contrast */
+    padding: 20px;
     text-align: center;
 }
 
-/* Section Headings */
-h1, h2 {
-    color: #333;
+header h1 {
+    font-size: 2.5em; /* Large header font size */
+    font-weight: bold;
+}
+
+header a {
+    color: #B3A369; /* Georgia Tech Gold for links */
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Section Titles */
+h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #B3A369; /* Georgia Tech Gold for section headings */
+    border-bottom: 2px solid #B3A369; /* Underline section titles with gold */
+    margin-bottom: 15px;
 }
 
 /* List Styling */
 ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: none; /* Remove default bullet points */
+    padding-left: 0;
 }
 
 li {
-    margin-bottom: 10px;
+    margin-bottom: 15px; /* Add spacing between items */
 }
 
-/* Links */
+/* Sub-list Styling (Indented Bullet Points) */
+.sub-list {
+    list-style-type: disc; /* Use bullet points for sub-items */
+    margin-left: 20px; /* Indent sub-items */
+}
+
+/* Links Styling */
 a {
-    color: #0073e6;
-    text-decoration: none;
+    color: #B3A369; /* Georgia Tech Gold for links */
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #003057; /* Navy Blue on hover for contrast */
 }
 
 /* Footer Styling */
 footer {
-    margin-top: 20px;
     text-align: center;
     font-size: 0.9em;
-    color: #666;
+    color: #666666; /* Neutral gray for footer text */
+}
+
+/* Highlighted Text (Optional) */
+.highlighted-text {
+    color: #B3A369; /* Georgia Tech Gold for emphasis text */
+}
+
+/* Golden Text Effect (Optional Gradient) */
+.gold-effect {
+    background-image: linear-gradient(to right, #B3A369, #A4925A); /* Gradient gold effect */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
