@@ -1,83 +1,77 @@
-/* General Styling */
+/* Reset and base styles */
 body {
-    font-family: 'Arial', sans-serif; /* Georgia Tech uses clean, modern fonts */
-    background-color: #f9f9f9; /* Light background for readability */
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #fffdfb;
+    color: #333;
     line-height: 1.6;
 }
 
-/* Header Styling */
-header {
-    background-color: #003057; /* Georgia Tech Navy Blue */
-    color: #FFFFFF; /* White text for contrast */
-    padding: 20px;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2.5em; /* Large header font size */
-    font-weight: bold;
-}
-
-header a {
-    color: #B3A369; /* Georgia Tech Gold for links */
+a {
+    color: #8A5843;
     text-decoration: none;
 }
 
-header a:hover {
+a:hover {
     text-decoration: underline;
 }
 
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+    color: #8A5843;
+}
+
+header p {
+    margin: 0.25rem 0;
+    font-size: 1rem;
+}
+
 /* Section Titles */
-h2 {
-    font-size: 1.8em;
-    font-weight: bold;
-    color: #B3A369; /* Georgia Tech Gold for section headings */
-    border-bottom: 2px solid #B3A369; /* Underline section titles with gold */
-    margin-bottom: 15px;
+.section-title {
+    border-bottom: 2px solid #D0A694;
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #8A5843;
+    font-size: 1.5rem;
 }
 
-/* List Styling */
-ul {
-    list-style-type: none; /* Remove default bullet points */
-    padding-left: 0;
+/* Lists */
+.resume-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-li {
-    margin-bottom: 15px; /* Add spacing between items */
+.resume-list li {
+    margin-bottom: 1.5rem;
 }
 
-/* Sub-list Styling (Indented Bullet Points) */
 .sub-list {
-    list-style-type: disc; /* Use bullet points for sub-items */
-    margin-left: 20px; /* Indent sub-items */
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
 }
 
-/* Links Styling */
-a {
-    color: #B3A369; /* Georgia Tech Gold for links */
-}
-
-a:hover {
-    color: #003057; /* Navy Blue on hover for contrast */
-}
-
-/* Footer Styling */
+/* Footer */
 footer {
     text-align: center;
-    font-size: 0.9em;
-    color: #666666; /* Neutral gray for footer text */
-}
-
-/* Highlighted Text (Optional) */
-.highlighted-text {
-    color: #B3A369; /* Georgia Tech Gold for emphasis text */
-}
-
-/* Golden Text Effect (Optional Gradient) */
-.gold-effect {
-    background-image: linear-gradient(to right, #B3A369, #A4925A); /* Gradient gold effect */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #666;
 }
